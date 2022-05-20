@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutterbloc/bloc/counter/bloc/counter_bloc.dart';
-import 'package:flutterbloc/bloc/counter_cubit.dart';
+import 'package:flutterbloc/bloc/counter/bloc/counter_cubit.dart';
 
 class HomeCubitPage extends StatelessWidget {
   @override
