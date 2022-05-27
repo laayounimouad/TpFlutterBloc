@@ -84,7 +84,10 @@ class ContactPage extends StatelessWidget {
                     return Card(
                       child: ListTile(
                         leading: Icon(Icons.accessibility_rounded),
-                        title: Text(state.contacts[index].name),
+                        title: Text(
+                          state.contacts[index].name,
+                          style: TextStyle(fontStyle: FontStyle.italic),
+                        ),
                         onTap: () {
                           context.read<MessageBloc>().add(ContactMessageEvent(
                               contact: state.contacts[index]));
