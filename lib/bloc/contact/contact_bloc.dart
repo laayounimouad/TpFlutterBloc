@@ -9,7 +9,7 @@ import 'package:flutterbloc/repositories/contact_repository.dart';
 class ContactBloc extends Bloc<ContactEvent, ContactState> {
   ContactRepository contactRepository;
   ContactBloc(ContactState contactState, this.contactRepository)
-      : super(contactState) {
+      : super(ContactInitialState()) {
     on((event, emit) async {
       if (event is LoadAllContactsEvent) {
         emit(ContactState(
